@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/estilos.css" >
+    <title>Video Player Tenshi</title>
+</head>
+<body background="./img/fondovideoplayer.png">
+    <div class="wrapper">
+        <div class="player">
+            <video id="video" poster="./img/Quien es.png" src="./video/tnmshireasfasra.mp4" width="400px"></video>
+            <div class="player-overlay">
+                <h2 class="player-title">Tens
+                    hi Presentacion!</h2>
+                <div class="player-actions"> 
+                    <button class="button" id="backward" ></button>
+                    <button class="button" id="play" ></button>
+                    <button class="button" hidden id="pause" ></button>
+                    <button class="button" id="forward" ></button>
+                    <div class="player-progress">     
+                        <input id="progress" type="range" min="0" max="0" step="1" value="0">
+                    </div> 
+                </div>
+            </div>
+              
+    </div>
+
+    <script src="./js/index.js" ></script>
+
+</body>
+</html>

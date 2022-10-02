@@ -1,0 +1,98 @@
+body {
+    background-color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.button {
+   inline-size: 32px;
+   block-size: 32px;
+   border: none;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-position: center;
+   cursor: pointer;
+}
+
+.button:active {
+    transform: scale(.9) ;
+}
+
+#play {
+    background-image: url("../img/icons8-circled_play\ 1.svg");
+}
+
+#pause {
+    background-image: url("../img/icons8-pause_button\ 1.svg");
+}
+
+#backward {
+    background-image: url("../img/icons8-reset\ 2.svg");
+}
+
+#forward {
+    background-image: url("../img/icons8-reset\ 1.svg");
+}
+
+.wrapper {
+    max-inline-size: 900px;
+    margin: auto;
+}
+
+.player{
+    margin-block-start: 100px ;
+    border: 5px solid rgb(78, 78, 78);
+    /* Deje el border porque se ve bonito jsjs*/
+    position: relative;
+}
+ 
+.player video{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.player-title {
+    color: whitesmoke;
+    position: absolute;
+    inset-block-start: 15px;
+    inset-inline-start: 10px;
+}
+
+.player-actions {
+    position: absolute;
+    inset: 0;
+    /* inset-block-end: 0;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inset-inline-start: 0; */   
+    border: 0px solid btrlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px ;
+}
+.player-progress {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0  ;
+    display: flex;
+    padding: 10px;
+}
+
+.player-progress input {
+    flex: 1;
+
+}
+
+.player-overlay{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .3s opacity ;
+}
+
+.player:hover .player-overlay{
+    opacity: 1;
+}
